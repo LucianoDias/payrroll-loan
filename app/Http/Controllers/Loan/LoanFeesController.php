@@ -45,12 +45,12 @@ class LoanFeesController extends Controller
 
             // Go through institutions to display data
             foreach($data['institutions'] as $institution){
-                $taxas_inst = array_filter($this->fees, function($obj) use ($institution) {
+                $fees_inst = array_filter($this->fees, function($obj) use ($institution) {
                     if($obj->instituicao == $institution)
                         return true;
                 });
                 // Search the rates to calculate
-                foreach($taxas_inst as $fee){
+                foreach($fees_inst as $fee){
                     if(in_array($fee->convenio,$data['covenants'])){ 
                         if(isset($data['fee'])){
                             if($fee->parcelas == $data['fee']){ 
