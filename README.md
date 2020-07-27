@@ -14,7 +14,7 @@
     <li><Passo 3 </li>
         <p>Rota para retorna as instituições disponiveis </p>
          <p>O controller LoanFeesController e responsável com a rota de simulação do empréstimo t</p>
-    li><Passo 4 </li>
+    <li><Passo 4 </li>
         <p>Helps </p>
          <p>A classe ApiError  retorna o array de erro</p>
 </o>
